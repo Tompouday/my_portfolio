@@ -12,12 +12,18 @@ section {
   align-items: center;
   color: white;
   background: #000000;
+  scroll-snap-align: start;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 /* Navigation bar with underline linear gradient color : NT Style*/
 
 nav {
-  position: absolute;
   top: 50%;
   right: 0;
   left: 0;
@@ -25,6 +31,7 @@ nav {
   display: table;
   margin: 0 auto;
   transform: translateY(-50%);
+  text-transform: uppercase;
 }
 
 nav a {
