@@ -19,6 +19,18 @@
     />
   </head>
   <body>
+    <div class="loader-wrapper">
+      <div class="loading-circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
     <nav>
       <a href="#">MYSELF</a>
       <a href="#">SKILLS</a>
@@ -26,5 +38,12 @@
       <a href="#">CONTACTS</a>
       <div id="indicator"></div>
     </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      setTimeout(function () {
+        $(".loader-wrapper").fadeToggle();
+      }, 2000);
+    </script>
   </body>
 </html>
