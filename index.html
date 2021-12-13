@@ -19,31 +19,58 @@
     />
   </head>
   <body>
-    <div class="loader-wrapper">
-      <div class="loading-circles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <!-- Loading animation effect  -->
+
+    <div class="loading-animation">
+      <div class="loader-wrapper">
+        <div class="loading-circles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
 
-    <nav>
-      <a href="#">MYSELF</a>
-      <a href="#">SKILLS</a>
-      <a href="#">WORK</a>
-      <a href="#">CONTACTS</a>
-      <div id="indicator"></div>
-    </nav>
+    <!-- Container with the different sections -->
+    <div class="container">
+      <section class="section0">
+        <nav>
+          <a href="#">MYSELF</a>
+          <a href="#">SKILLS</a>
+          <a href="#">WORK</a>
+          <a href="#">CONTACTS</a>
+          <div id="indicator"></div>
+        </nav>
+      </section>
+
+      <section class="section1">
+        <h1>Myself</h1>
+      </section>
+
+      <section class="section2">
+        <h1>Skills</h1>
+      </section>
+
+      <section class="section3">
+        <h1>Work</h1>
+      </section>
+
+      <section class="section4">
+        <h1>Contacts</h1>
+      </section>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       setTimeout(function () {
         $(".loader-wrapper").fadeToggle();
-      }, 2000);
+      }, 1500);
     </script>
+
+    -->
   </body>
 </html>
