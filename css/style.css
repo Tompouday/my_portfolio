@@ -152,71 +152,92 @@ nav a:nth-child(4):hover ~ #indicator {
 
 .section1,
 .section2,
-.section3,
-.section4 {
+.section3 {
   align-items: start;
   padding-top: 50px;
 }
 
+.section4 {
+  align-items: start;
+  padding-top: 90vh;
+}
+
 /* Scroll down button */
 
-.scroll-down {
-  opacity: 1;
-  -webkit-transition: all 0.5s ease-in 3s;
-  transition: all 0.5s ease-in 3s;
+body {
+  background: #000;
 }
 
-.scroll-down {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -16px;
-  display: block;
-  width: 40px;
-  height: 40px;
-  border: 0.5px solid #fff;
-  background-size: 14px auto;
-  border-radius: 50%;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+.center-con {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
-.scroll-down:before {
+.round {
   position: relative;
-  top: calc(50% - 8px);
-  left: calc(50% - 8px);
-  transform: rotate(-45deg);
-  display: block;
-  width: 12px;
-  height: 12px;
-  content: "";
-  border: 2px solid white;
-  border-width: 0px 0 0.5px 0.5px;
+  border: 3px solid #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
 }
 
-@keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  60% {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
+.arrows {
+  z-index: 999;
+  height: 3px;
+  margin: 1px;
+  width: 30px;
+  background: #fff;
+  transition: 0.4s ease;
+}
+
+.arrows:first-child {
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 25%;
+  bottom: 35%;
+}
+
+.arrows:nth-child(2) {
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 45%;
+  bottom: 35%;
+}
+
+.arrows:nth-child(3) {
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 25%;
+  bottom: 54%;
+}
+
+.arrows:nth-child(4) {
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 45%;
+  bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+  transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+  transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+  transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+  transform: rotate(-225deg);
 }
 
 /*Loading infinite circles */
