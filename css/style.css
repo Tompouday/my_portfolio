@@ -150,9 +150,7 @@ nav a:nth-child(4):hover ~ #indicator {
 
 /* Title position */
 
-.section1,
-.section2,
-.section3 {
+.section {
   align-items: start;
   padding-top: 50px;
 }
